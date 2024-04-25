@@ -6,16 +6,16 @@ This repository contains Python scripts implementing Elliptic Curve Cryptography
 Python 3.x
 SymPy library (pip install sympy) for prime number verification
 # Components
-ecc_diffie_hellman.py:
+## ecc_diffie_hellman.py:
 This script implements ECC-based Diffie-Hellman key exchange using a specified elliptic curve.
-It includes functions for:
+### It includes functions for:
 Verifying if an elliptic curve is valid.
 Checking if a point belongs to the specified curve.
 Scalar multiplication on elliptic curves using the double-and-add algorithm.
 Point addition and scalar multiplication for generating public keys and shared secrets.
-elliptic_curve_encryption.py:
+## elliptic_curve_encryption.py:
 This script demonstrates encryption and decryption operations using elliptic curve mathematics.
-It includes functions for:
+### It includes functions for:
 Modular inverse calculation.
 Point addition and doubling on elliptic curves.
 Scalar multiplication for encryption and decryption.
@@ -39,21 +39,21 @@ Here's a quick example of how to use these scripts:
 
 Enter value for a: 0
 Enter value for b: -4
-Enter value for p (a prime number): 257
+Enter value for p (a prime number): 211
 Elliptic curve is valid
 
 Enter coordinates for the generator point (G)
 Enter x coordinate of G: 2
 Enter y coordinate of G: 2
 
-[Emaan]: Enter your private key: 101
-[Emaan]: Generated Public Key (to be sent to Maheen): (66, 96)
+[Emaan]: Enter your private key: 2
+[Emaan]: Generated Public Key (to be sent to Maheen): (5, 200)
 
-[Maheen]: Enter your private key: 41
-[Maheen]: Generated Public Key (to be sent to Emaan): (119, 52)
+[Maheen]: Enter your private key: 1
+[Maheen]: Generated Public Key (to be sent to Emaan): (2, 2)
 
-Emaan computed Shared Secret: (31, 226)
-Maheen computed Shared Secret: (31, 226)
+Emaan computed Shared Secret: (5, 200)
+Maheen computed Shared Secret: (5, 200)
 Shared Secret Matched!
 ## Elliptic Curve Encryption and Decryption:
 
@@ -67,7 +67,7 @@ Shared Secret Matched!
 -> Enter the y-coordinate of the message point Pm: 26
 -> Enter the random integer k: 41
 
-=> Ciphertext Cm = ((82, 8), (117, 196))
+=> Ciphertext Cm = ((136, 128), (246, 174))
 
 => Decrypted plaintext = (112, 26)
 ### Notes
